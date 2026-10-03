@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #334155;
+    background-color: #F8FAFD;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Plus Jakarta Sans', sans-serif;
+    color: #043961;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1482CF;
+}
+
+/* Glassmorphism light */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(4, 57, 97, 0.12), 0 4px 12px -2px rgba(4, 57, 97, 0.05);
+}
+
+/* Road dash line effect */
+.road-line {
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(20, 130, 207, 0.25) 0,
+    rgba(20, 130, 207, 0.25) 24px,
+    transparent 24px,
+    transparent 44px
+  );
+}
