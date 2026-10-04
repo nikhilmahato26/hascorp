@@ -1,5 +1,5 @@
 import React from 'react';
-import { KeyRound, Compass, MapPin, PhoneCall } from 'lucide-react';
+import { KeyRound, Compass, PhoneCall } from 'lucide-react';
 
 export const QuickHighlights: React.FC = () => {
   const highlights = [
@@ -14,11 +14,6 @@ export const QuickHighlights: React.FC = () => {
       icon: Compass,
     },
     {
-      title: 'Nagpur Based',
-      description: 'Shivaji Nagar, walking distance from Shankar Nagar & L.A.D. Square Metro Stations.',
-      icon: MapPin,
-    },
-    {
       title: 'Easy Enquiry',
       description: 'Call or enquire to check vehicle availability.',
       icon: PhoneCall,
@@ -27,7 +22,7 @@ export const QuickHighlights: React.FC = () => {
 
   return (
     <section id="highlights" className="relative -mt-8 sm:-mt-12 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
         {highlights.map((item, index) => {
           const Icon = item.icon;
           return (

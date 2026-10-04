@@ -6,11 +6,11 @@ import {
   Phone, 
   Sparkles, 
   Check, 
-  MessageSquare, 
   Fuel, 
   Users, 
   Cog 
 } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 interface FleetSectionProps {
   onOpenEnquiry?: (preferredCategory?: string) => void;
@@ -227,7 +227,7 @@ export const FleetSection: React.FC<FleetSectionProps> = ({ onOpenEnquiry }) => 
                     onClick={() => handleQuickWhatsApp(selectedEnquiryType)}
                     className="inline-flex items-center justify-center gap-2.5 px-7 py-4 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold rounded-xl shadow-sm transition-all active:scale-95 text-base"
                   >
-                    <MessageSquare className="w-5 h-5" />
+                    <WhatsAppIcon className="w-5 h-5" />
                     <span>WhatsApp Availability</span>
                   </button>
                 </div>

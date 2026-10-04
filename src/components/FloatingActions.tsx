@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, MessageSquare } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const FloatingActions: React.FC = () => {
   const handleWhatsApp = () => {
@@ -28,7 +29,7 @@ export const FloatingActions: React.FC = () => {
         aria-label="Chat on WhatsApp"
         title="WhatsApp Availability Enquiry"
       >
-        <MessageSquare className="w-6 h-6 sm:w-7 sm:h-7" />
+        <WhatsAppIcon className="w-6 h-6 sm:w-7 sm:h-7" />
       </button>
     </div>
   );

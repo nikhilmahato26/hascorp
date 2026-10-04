@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, ArrowRight, ShieldCheck, MapPin, KeyRound, Sparkles } from 'lucide-react';
+import { Phone, ArrowRight, Sparkles } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 interface HeroProps {
   onOpenEnquiry?: () => void;
@@ -27,14 +28,6 @@ export const Hero: React.FC<HeroProps> = () => {
           {/* LEFT COLUMN: Content */}
           <div className="lg:col-span-6 space-y-6 text-left">
             
-            {/* Small Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-blue-200/70 shadow-sm">
-              <span className="flex h-2 w-2 rounded-full bg-brand-blue animate-pulse"></span>
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-navy">
-                SELF DRIVE CAR RENTALS IN NAGPUR
-              </span>
-            </div>
-
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-navy tracking-tight leading-[1.1] font-heading">
               DRIVE YOUR WAY <br />
@@ -49,43 +42,41 @@ export const Hero: React.FC<HeroProps> = () => {
             </p>
 
             {/* Primary & Secondary CTAs */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3.5">
               <a
                 href="#fleet"
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 text-base font-bold text-white bg-brand-blue hover:bg-brand-blue-hover rounded-xl shadow-blue-glow transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-4 text-base font-bold text-white bg-brand-blue hover:bg-brand-blue-hover rounded-xl shadow-blue-glow transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Browse Cars</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
 
               <a
+                href="https://wa.me/919607681995?text=Hello%20Hascorp%20Self%20Drive%20Cars%2C%20I%20would%20like%20to%20inquire%20about%20self-drive%20car%20booking%20in%20Nagpur."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-4 text-base font-bold text-white bg-[#25D366] hover:bg-[#20ba59] rounded-xl shadow-sm transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+              >
+                <WhatsAppIcon className="w-5 h-5" />
+                <span>WhatsApp Us</span>
+              </a>
+
+              <a
                 href="tel:+919607681995"
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 text-base font-bold text-brand-navy bg-white hover:bg-brand-blue-50 border-2 border-brand-navy/20 hover:border-brand-blue rounded-xl shadow-soft transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-4 text-base font-bold text-brand-navy bg-white hover:bg-brand-blue-50 border-2 border-brand-navy/20 hover:border-brand-blue rounded-xl shadow-soft transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
               >
                 <Phone className="w-5 h-5 text-brand-blue" />
                 <span>Call Now: +91 9607681995</span>
               </a>
             </div>
 
-            {/* Trust Points */}
-            <div className="pt-6 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <div className="flex items-center gap-2 text-xs font-semibold text-slate-600">
-                <div className="w-6 h-6 rounded-md bg-brand-blue-50 text-brand-blue flex items-center justify-center flex-shrink-0">
-                  <KeyRound className="w-3.5 h-3.5" />
-                </div>
-                <span>100% Self-Drive</span>
-              </div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-slate-600">
-                <div className="w-6 h-6 rounded-md bg-brand-blue-50 text-brand-blue flex items-center justify-center flex-shrink-0">
-                  <ShieldCheck className="w-3.5 h-3.5" />
-                </div>
-                <span>Full Privacy</span>
-              </div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-slate-600 col-span-2 sm:col-span-1">
-                <div className="w-6 h-6 rounded-md bg-brand-blue-50 text-brand-blue flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-3.5 h-3.5" />
-                </div>
-                <span>Shivaji Nagar, Nagpur</span>
+            {/* Location Badge */}
+            <div className="pt-1">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-blue-200/70 shadow-sm">
+                <span className="flex h-2 w-2 rounded-full bg-brand-blue animate-pulse"></span>
+                <span className="text-xs font-bold uppercase tracking-wider text-brand-navy">
+                  SELF DRIVE CAR RENTALS IN NAGPUR
+                </span>
               </div>
             </div>
 

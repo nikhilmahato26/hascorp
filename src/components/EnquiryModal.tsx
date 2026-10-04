@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { X, Calendar, Phone, User, MessageSquare, Car, CheckCircle2 } from 'lucide-react';
+import { X, Calendar, Phone, User, Car, CheckCircle2 } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 interface EnquiryModalProps {
   isOpen: boolean;
@@ -218,7 +219,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                   type="submit"
                   className="w-full py-3.5 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold rounded-xl text-sm shadow-blue-glow flex items-center justify-center gap-2 transition-all active:scale-95"
                 >
-                  <MessageSquare className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4" />
                   <span>Enquire Availability on WhatsApp</span>
                 </button>
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, ArrowUp, ShieldCheck } from 'lucide-react';
-import { Logo } from './Logo';
+import { Phone, Mail, MapPin, ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -9,31 +8,12 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white border-t border-slate-200/80 text-slate-600 relative z-10">
-      {/* Upper Footer: Brand & Core Info */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+      {/* Upper Footer: Quick Links & Contact Details */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16">
           
-          {/* Brand Info (4 Cols) */}
-          <div className="lg:col-span-5 space-y-4 text-left">
-            <Logo size="md" />
-            
-            <p className="text-sm text-slate-600 leading-relaxed max-w-sm mt-3">
-              Travel hassle free with our reliable self drive fleet. Perfect for business trips or family getaways, enjoy a smooth and comfortable ride every time.
-            </p>
-
-            <div className="pt-2 flex items-center gap-3 text-xs font-semibold text-brand-navy">
-              <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-blue-50 text-brand-blue border border-brand-blue-100">
-                <ShieldCheck className="w-4 h-4" />
-                Dedicated Self-Drive
-              </span>
-              <span className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700">
-                Nagpur Based
-              </span>
-            </div>
-          </div>
-
-          {/* Quick Links (2 Cols) */}
-          <div className="lg:col-span-2 space-y-3 text-left">
+          {/* Quick Links (4 Cols) */}
+          <div className="md:col-span-4 lg:col-span-4 space-y-3 text-left">
             <h4 className="text-xs font-bold uppercase tracking-wider text-brand-navy font-heading">
               Quick Links
             </h4>

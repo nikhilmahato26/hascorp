@@ -40,11 +40,11 @@ export const WhySelfDrive: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-2xl mx-auto space-y-3 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-brand-blue-200/80 shadow-sm text-xs font-bold text-brand-navy uppercase tracking-wider">
-            <span>The Self-Drive Advantage</span>
+            <span>The Hascorp Self Drive Cars Advantage</span>
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy font-heading tracking-tight">
-            WHY SELF DRIVE?
+            WHY HASCORP SELF DRIVE CARS?
           </h2>
 
           <p className="text-base text-slate-600">
