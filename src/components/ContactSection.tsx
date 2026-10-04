@@ -109,6 +109,9 @@ export const ContactSection: React.FC = () => {
                   <p className="text-sm sm:text-base font-bold text-brand-navy leading-snug">
                     Plot No 168, Shivaji Nagar, Near Shivaji Nagar Garden, Nagpur - 440010
                   </p>
+                  <p className="text-xs text-brand-blue font-semibold mt-1">
+                    We are at walking distance from Shankar Nagar Metro Station and L.A.D. Square Metro Station
+                  </p>
                   <p className="text-xs text-slate-500 font-medium">
                     Nagpur, Maharashtra, India
                   </p>
@@ -270,6 +273,7 @@ export const ContactSection: React.FC = () => {
               <div>
                 <h4 className="text-base font-bold text-brand-navy">Shivaji Nagar Garden Location</h4>
                 <p className="text-xs text-slate-500">Plot No 168, Shivaji Nagar, Near Shivaji Nagar Garden, Nagpur - 440010</p>
+                <p className="text-xs text-brand-blue font-semibold mt-0.5">We are at walking distance from Shankar Nagar Metro Station and L.A.D. Square Metro Station</p>
               </div>
             </div>
             <a

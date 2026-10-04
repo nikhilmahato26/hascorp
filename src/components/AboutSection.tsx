@@ -57,7 +57,7 @@ export const AboutSection: React.FC = () => {
 
             {/* Supporting Text */}
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-              Hascorp Self Drive Cars provides self-drive car rental services in Nagpur, Maharashtra. The service is designed for customers who want the flexibility of driving themselves for their personal, family, business or travel needs.
+              Travel hassle free with our reliable self drive fleet. Perfect for business trips or family getaways, enjoy a smooth and comfortable ride every time.
             </p>
 
             {/* Key purpose list adhering strictly to provided facts */}
@@ -94,6 +94,9 @@ export const AboutSection: React.FC = () => {
                   </h4>
                   <p className="text-sm sm:text-base font-bold text-brand-navy leading-snug">
                     Plot No 168, Shivaji Nagar, Near Shivaji Nagar Garden, Nagpur - 440010
+                  </p>
+                  <p className="text-xs text-brand-blue font-semibold mt-1">
+                    We are at walking distance from Shankar Nagar Metro Station and L.A.D. Square Metro Station
                   </p>
                   <p className="text-xs text-slate-500 mt-1 font-medium">
                     Nagpur, Maharashtra, India

@@ -15,7 +15,7 @@ export const QuickHighlights: React.FC = () => {
     },
     {
       title: 'Nagpur Based',
-      description: 'Conveniently located in Shivaji Nagar, Nagpur.',
+      description: 'Shivaji Nagar, walking distance from Shankar Nagar & L.A.D. Square Metro Stations.',
       icon: MapPin,
     },
     {

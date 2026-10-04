@@ -233,9 +233,14 @@ export const FleetSection: React.FC<FleetSectionProps> = ({ onOpenEnquiry }) => 
                 </div>
 
                 {/* Location Note */}
-                <div className="pt-4 border-t border-slate-200/80 flex items-center gap-2 text-xs text-slate-500 font-medium">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                  <span>Vehicles dispatched from Plot No 168, Shivaji Nagar, Nagpur.</span>
+                <div className="pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-500 font-medium">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>Vehicles dispatched from Plot No 168, Shivaji Nagar, Nagpur.</span>
+                  </div>
+                  <span className="text-brand-blue font-semibold">
+                    Walking distance from Shankar Nagar & L.A.D. Square Metro Stations
+                  </span>
                 </div>
 
               </div>

@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
             <Logo size="md" />
             
             <p className="text-sm text-slate-600 leading-relaxed max-w-sm mt-3">
-              Reliable self-drive cars in Nagpur, Maharashtra for flexible and convenient personal, family, and business journeys. Travel freely on your own terms.
+              Travel hassle free with our reliable self drive fleet. Perfect for business trips or family getaways, enjoy a smooth and comfortable ride every time.
             </p>
 
             <div className="pt-2 flex items-center gap-3 text-xs font-semibold text-brand-navy">
@@ -68,9 +68,14 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                <span className="text-slate-700 leading-snug">
-                  Plot No 168, Shivaji Nagar, Near Shivaji Nagar Garden, Nagpur - 440010, Maharashtra, India
-                </span>
+                <div className="space-y-1">
+                  <span className="text-slate-700 leading-snug block">
+                    Plot No 168, Shivaji Nagar, Near Shivaji Nagar Garden, Nagpur - 440010, Maharashtra, India
+                  </span>
+                  <span className="text-xs text-brand-blue font-semibold block">
+                    We are at walking distance from Shankar Nagar Metro Station and L.A.D. Square Metro Station
+                  </span>
+                </div>
               </div>
 
               <div className="flex items-center gap-3">

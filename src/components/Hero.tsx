@@ -45,7 +45,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
 
             {/* Supporting Text */}
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
-              Reliable self-drive cars in Nagpur for flexible and convenient journeys. Choose your car and enjoy the freedom to travel on your own terms.
+              Travel hassle free with our reliable self drive fleet. Perfect for business trips or family getaways, enjoy a smooth and comfortable ride every time.
             </p>
 
             {/* Primary & Secondary CTAs */}
