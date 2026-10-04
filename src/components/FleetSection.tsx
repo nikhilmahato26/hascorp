@@ -239,7 +239,7 @@ export const FleetSection: React.FC<FleetSectionProps> = ({ onOpenEnquiry }) => 
                     <span>Vehicles dispatched from Plot No 168, Shivaji Nagar, Nagpur.</span>
                   </div>
                   <span className="text-brand-blue font-semibold">
-                    Walking distance from Shankar Nagar & L.A.D. Square Metro Stations
+                    Walking distance from Shankar Nagar Metro Station & L.A.D. Square Metro Station
                   </span>
                 </div>
 

@@ -102,7 +102,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                 Check Vehicle Availability
               </h3>
               <p className="text-xs text-slate-500 mt-1">
-                Shivaji Nagar, Nagpur • Walking distance from Shankar Nagar & L.A.D. Square Metro Stations
+                Shivaji Nagar, Nagpur • Walking distance from Shankar Nagar Metro Station & L.A.D. Square Metro Station
               </p>
             </div>
 
