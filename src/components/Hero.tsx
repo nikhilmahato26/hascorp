@@ -5,7 +5,7 @@ interface HeroProps {
   onOpenEnquiry?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
+export const Hero: React.FC<HeroProps> = () => {
   return (
     <section id="home" className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-gradient-to-b from-[#F0F6FD] via-[#F8FBFE] to-white">
       {/* Abstract light curved decorative shapes & road lines */}
@@ -121,29 +121,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
                 {/* Subtle Road Graphic line underneath image */}
                 <div className="w-full h-1.5 mt-3 rounded-full road-line opacity-75"></div>
               </div>
-
-              {/* Floating Feature Tag 1: Shivaji Nagar Hub */}
-              <div className="absolute -bottom-5 -left-4 sm:left-4 bg-white px-4 py-3 rounded-2xl shadow-elevated border border-brand-blue-100 flex items-center gap-3 animate-bounce-subtle">
-                <div className="w-10 h-10 rounded-xl bg-brand-navy text-white flex items-center justify-center shadow-sm">
-                  <MapPin className="w-5 h-5 text-brand-blue-light" />
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-brand-navy leading-tight">Nagpur Location</p>
-                  <p className="text-[11px] text-slate-500 font-medium">Shivaji Nagar Garden</p>
-                </div>
-              </div>
-
-              {/* Floating Feature Tag 2: Easy Availability */}
-              <button
-                type="button"
-                onClick={onOpenEnquiry}
-                className="absolute -top-4 -right-2 sm:right-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-elevated border border-brand-blue-200/80 flex items-center gap-2.5 hover:scale-105 transition-transform cursor-pointer"
-                title="Click to check availability"
-              >
-                <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></div>
-                <span className="text-xs font-extrabold text-brand-navy">Ready for Booking</span>
-              </button>
-
             </div>
           </div>
 

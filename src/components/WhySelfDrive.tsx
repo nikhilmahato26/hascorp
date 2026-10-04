@@ -89,11 +89,6 @@ export const WhySelfDrive: React.FC = () => {
                     {feature.subtitle}
                   </p>
                 </div>
-
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-bold text-brand-navy">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                  <span>Pure Self-Drive</span>
-                </div>
               </div>
             );
           })}

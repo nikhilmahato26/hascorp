@@ -46,10 +46,6 @@ export const QuickHighlights: React.FC = () => {
                   {item.description}
                 </p>
               </div>
-              <div className="mt-4 pt-3 border-t border-slate-50 flex items-center justify-between text-xs font-semibold text-brand-blue">
-                <span>Hascorp Standard</span>
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-              </div>
             </div>
           );
         })}

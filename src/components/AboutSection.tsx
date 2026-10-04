@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Navigation, Phone, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, CheckCircle2 } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -33,12 +33,6 @@ export const AboutSection: React.FC = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-
-              {/* Verified Nagpur Hub Badge */}
-              <div className="absolute -top-4 -right-2 sm:-right-4 bg-white px-4 py-2.5 rounded-2xl border border-brand-blue-100 shadow-elevated flex items-center gap-2">
-                <Navigation className="w-4 h-4 text-brand-blue" />
-                <span className="text-xs font-bold text-brand-navy">Shivaji Nagar, Nagpur</span>
               </div>
             </div>
           </div>
