@@ -1,10 +1,10 @@
 export interface Vehicle {
   id: string;
   name: string;
-  category: 'Hatchback' | 'Sedan' | 'SUV' | 'Luxury' | '7-Seater';
+  category: 'Hatchback' | 'Sedan' | 'SUV' | 'Luxury' | '7-Seater' | 'MUV';
   transmission: 'Manual' | 'Automatic';
   fuelType: 'Petrol' | 'Diesel' | 'CNG' | 'Electric';
-  seats: number;
+  seats: number | string;
   image?: string;
   pricePerDay?: number | string;
   featured?: boolean;

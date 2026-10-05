@@ -155,11 +155,21 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                     onChange={(e) => setVehicleCategory(e.target.value)}
                     className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:bg-white focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-all"
                   >
-                    <option value="Any Vehicle">Any Vehicle (Check what is free)</option>
-                    <option value="Hatchback">Hatchback (Compact & City)</option>
-                    <option value="Sedan">Sedan (Comfort & Family)</option>
-                    <option value="SUV">SUV (Spacious & Ground Clearance)</option>
-                    <option value="7-Seater">7-Seater / MUV (Large Group)</option>
+                    <option value="Any Vehicle">Any Vehicle (Check Availability)</option>
+                    <optgroup label="Available Fleet Models">
+                      <option value="Maruti Suzuki Ertiga">Maruti Suzuki Ertiga (MUV • 6/7 Seater)</option>
+                      <option value="Mahindra Thar Roxx">Mahindra Thar Roxx (SUV • 5 Seater)</option>
+                      <option value="Kia Seltos">Kia Seltos (SUV • Automatic)</option>
+                      <option value="Maruti Suzuki Baleno">Maruti Suzuki Baleno (Hatchback • 5 Seater)</option>
+                      <option value="Maruti Suzuki Wagon R">Maruti Suzuki Wagon R (Hatchback • 5 Seater)</option>
+                      <option value="Nissan Sunny">Nissan Sunny (Sedan • 5 Seater)</option>
+                    </optgroup>
+                    <optgroup label="Car Categories">
+                      <option value="SUV">SUV (Thar Roxx, Seltos)</option>
+                      <option value="MUV">MUV / 6-7 Seater (Ertiga)</option>
+                      <option value="Hatchback">Hatchback (Baleno, Wagon R)</option>
+                      <option value="Sedan">Sedan (Sunny)</option>
+                    </optgroup>
                   </select>
                 </div>
               </div>

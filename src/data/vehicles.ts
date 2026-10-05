@@ -2,44 +2,84 @@ import { Vehicle } from '../types';
 
 /**
  * HASCORP SELF DRIVE CARS - Centralized Fleet Inventory
- * 
- * To add vehicles, add objects conforming to the Vehicle interface.
- * When this array is empty, the FleetSection automatically displays the
- * high-converting "Check Availability" enquiry portal per client specifications.
  */
 export const vehicles: Vehicle[] = [
-  /*
-  // Example of adding a vehicle once models & pricing are confirmed:
   {
-    id: 'creta-2024',
-    name: 'Hyundai Creta',
+    id: 'maruti-ertiga',
+    name: 'Maruti Suzuki Ertiga',
+    category: 'MUV',
+    transmission: 'Manual',
+    fuelType: 'Petrol',
+    seats: '6/7',
+    image: '/images/fleet/ertiga.jpg',
+    pricePerDay: 'Available on Enquiry',
+    featured: true,
+    features: ['6/7 Seater MUV', 'Dual AC', 'Spacious Luggage Room', 'Comfortable Long Drives']
+  },
+  {
+    id: 'mahindra-thar-roxx',
+    name: 'Mahindra Thar Roxx',
+    category: 'SUV',
+    transmission: 'Manual',
+    fuelType: 'Diesel',
+    seats: 5,
+    image: '/images/fleet/thar-roxx.jpg',
+    pricePerDay: 'Available on Enquiry',
+    featured: true,
+    features: ['5-Door Thar Roxx', 'High Ground Clearance', 'Commanding Stance', 'Rugged All-Road Ability']
+  },
+  {
+    id: 'kia-seltos',
+    name: 'Kia Seltos',
     category: 'SUV',
     transmission: 'Automatic',
     fuelType: 'Diesel',
     seats: 5,
-    image: '/images/fleet/creta.png',
-    pricePerDay: 'Available on enquiry',
-    features: ['Sunroof', 'Touchscreen Infotainment', 'Cruise Control', 'Push Button Start']
+    image: '/images/fleet/seltos.jpg',
+    pricePerDay: 'Available on Enquiry',
+    featured: true,
+    features: ['Automatic Transmission', 'Diesel Turbo Efficiency', 'Touchscreen Infotainment', 'Premium Interior']
   },
   {
-    id: 'swift-2024',
-    name: 'Maruti Suzuki Swift',
+    id: 'maruti-baleno',
+    name: 'Maruti Suzuki Baleno',
     category: 'Hatchback',
     transmission: 'Manual',
     fuelType: 'Petrol',
     seats: 5,
-    image: '/images/fleet/swift.png',
-    pricePerDay: 'Available on enquiry',
-    features: ['Bluetooth Audio', 'Air Conditioning', 'Power Windows', 'High Mileage']
+    image: '/images/fleet/baleno.jpg',
+    pricePerDay: 'Available on Enquiry',
+    features: ['Premium Hatchback', 'Excellent Mileage', 'Spacious Cabin', 'Smooth Highway Drive']
+  },
+  {
+    id: 'maruti-wagon-r',
+    name: 'Maruti Suzuki Wagon R',
+    category: 'Hatchback',
+    transmission: 'Manual',
+    fuelType: 'Petrol',
+    seats: 5,
+    image: '/images/fleet/wagonr.jpg',
+    pricePerDay: 'Available on Enquiry',
+    features: ['Tall Boy Comfort', 'High Mileage', 'Easy City Parking', 'Light Clutch & Steering']
+  },
+  {
+    id: 'nissan-sunny',
+    name: 'Nissan Sunny',
+    category: 'Sedan',
+    transmission: 'Manual',
+    fuelType: 'Petrol',
+    seats: 5,
+    image: '/images/fleet/sunny.jpg',
+    pricePerDay: 'Available on Enquiry',
+    features: ['Best-in-Class Legroom', 'Huge Trunk Capacity', 'Plush Suspension', 'Ideal for Family Trips']
   }
-  */
 ];
 
 export const vehicleCategories = [
   'All Vehicles',
-  'Hatchback',
-  'Sedan',
   'SUV',
-  '7-Seater',
-  'Luxury'
+  'MUV',
+  'Hatchback',
+  'Sedan'
 ] as const;
+
