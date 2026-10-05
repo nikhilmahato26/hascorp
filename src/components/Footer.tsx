@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, ArrowUp } from 'lucide-react';
+import { InstagramIcon, FacebookIcon } from './SocialIcons';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -20,9 +21,6 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm font-medium">
               <li>
                 <a href="#home" className="hover:text-brand-blue transition-colors">Home</a>
-              </li>
-              <li>
-                <a href="#highlights" className="hover:text-brand-blue transition-colors">Highlights</a>
               </li>
               <li>
                 <a href="#why-self-drive" className="hover:text-brand-blue transition-colors">Why Self Drive?</a>
@@ -77,6 +75,36 @@ export const Footer: React.FC = () => {
                   hascorpselfdrivecars@gmail.com
                 </a>
               </div>
+            </div>
+          </div>
+
+          {/* Social Channels (3 Cols) */}
+          <div className="md:col-span-12 lg:col-span-3 space-y-3 text-left">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-brand-navy font-heading">
+              Social Media
+            </h4>
+            <p className="text-xs text-slate-500">
+              Follow Hascorp Self Drive Cars for latest updates and fleet additions.
+            </p>
+            <div className="flex items-center gap-2 pt-1">
+              <a
+                href="https://www.instagram.com/hascorpselfdrivecars?stkn=MW92NnNtejF2YWxseg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:text-white text-slate-700 flex items-center justify-center transition-all duration-200 shadow-2xs"
+                aria-label="Hascorp on Instagram"
+              >
+                <InstagramIcon className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1DNjTtukJd/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-slate-100 hover:bg-[#1877F2] hover:text-white text-slate-700 flex items-center justify-center transition-all duration-200 shadow-2xs"
+                aria-label="Hascorp on Facebook"
+              >
+                <FacebookIcon className="w-4 h-4" />
+              </a>
             </div>
           </div>
 

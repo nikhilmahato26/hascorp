@@ -20,7 +20,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'Highlights', href: '#highlights' },
     { name: 'Why Self Drive', href: '#why-self-drive' },
     { name: 'Cars & Fleet', href: '#fleet' },
     { name: 'About', href: '#about' },

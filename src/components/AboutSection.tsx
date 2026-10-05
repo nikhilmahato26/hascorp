@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Target, Sparkles, ShieldCheck } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -8,39 +8,12 @@ export const AboutSection: React.FC = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue-50/60 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           
-          {/* LEFT: High Quality Car Photography */}
-          <div className="lg:col-span-6 order-2 lg:order-1">
-            <div className="relative">
-              {/* Outer decorative card frame */}
-              <div className="relative rounded-3xl overflow-hidden p-2 sm:p-3 bg-gradient-to-tr from-brand-navy-50 to-brand-blue-50 border border-brand-blue-100 shadow-card">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 relative group">
-                  <img
-                    src="/images/about-car.jpg"
-                    alt="Self Drive Experience with Hascorp Cars Nagpur"
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-900/30 via-transparent to-transparent pointer-events-none"></div>
-
-                  <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-3.5 border border-slate-100 shadow-md">
-                    <p className="text-xs font-bold text-brand-navy flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-brand-blue"></span>
-                      Designed for Personal, Family & Business Travel
-                    </p>
-                    <p className="text-[11px] text-slate-500 font-medium mt-0.5">
-                      Explore Nagpur and beyond with the car of your choice
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* RIGHT: About Content */}
-          <div className="lg:col-span-6 order-1 lg:order-2 space-y-6 text-left">
+          {/* LEFT: About Story, Mission & Actions */}
+          <div className="lg:col-span-6 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-brand-navy-50 text-brand-navy text-xs font-bold tracking-wider uppercase">
-              About Hascorp
+              ABOUT HASCORP SELF DRIVE CARS
             </div>
 
             {/* Heading */}
@@ -49,35 +22,68 @@ export const AboutSection: React.FC = () => {
               <span className="text-brand-blue">YOUR DRIVE.</span>
             </h2>
 
-            {/* Supporting Text */}
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-              Travel hassle free with our reliable self drive fleet. Perfect for business trips or family getaways, enjoy a smooth and comfortable ride every time.
-            </p>
+            {/* Our Story */}
+            <div className="space-y-3 bg-slate-50/80 border border-slate-200/80 rounded-2xl p-6">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-brand-blue flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4 text-brand-blue" />
+                <span>Our Story</span>
+              </h3>
+              <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-medium">
+                Established in 2026, Hascorp Self Drive Cars was built on a simple premise: renting a vehicle in Nagpur should feel exactly like driving your own meticulously cared for car.
+              </p>
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                We started this journey because we believe that whether you are navigating city streets or heading out on a highway road trip, the quality of your drive matters.
+              </p>
+            </div>
 
-            {/* Key purpose list adhering strictly to provided facts */}
-            <div className="space-y-3 pt-2">
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-slate-700 font-medium">
-                  <strong>Personal & Family Trips:</strong> Freedom to enjoy your private road trips without an external driver.
-                </p>
+            {/* Our Mission */}
+            <div className="p-6 rounded-2xl bg-gradient-to-tr from-brand-navy to-brand-navy-800 text-white shadow-card relative overflow-hidden">
+              <div className="flex items-center gap-2 text-brand-blue font-bold text-xs uppercase tracking-wider mb-2.5">
+                <Target className="w-4 h-4" />
+                <span>Our Mission</span>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-slate-700 font-medium">
-                  <strong>Business & Daily Commute:</strong> Professional self-drive transport tailored for city meetings and intercity routes.
-                </p>
+              <p className="text-base sm:text-lg font-semibold text-white leading-relaxed">
+                “To provide Nagpur with a reliable and premium self drive experience where every customer feels confident behind the wheel.”
+              </p>
+            </div>
+
+            {/* Quick Action */}
+            <div className="pt-2 flex flex-wrap gap-4">
+              <a
+                href="tel:+919607681995"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-brand-navy text-white hover:bg-brand-navy-700 font-bold rounded-xl text-sm transition-all duration-200 shadow-sm"
+              >
+                <Phone className="w-4 h-4 text-brand-blue" />
+                <span>Call +91 9607681995</span>
+              </a>
+
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-white text-brand-navy hover:bg-slate-50 border border-slate-200 font-bold rounded-xl text-sm transition-all duration-200"
+              >
+                <span>View Contact Details</span>
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT: The Hascorp Standard & Location Card */}
+          <div className="lg:col-span-6 space-y-6 text-left">
+            {/* The Hascorp Standard */}
+            <div className="bg-slate-50/90 border border-slate-200/90 rounded-2xl p-6 shadow-sm space-y-3">
+              <div className="flex items-center gap-2 text-brand-navy font-bold text-xs uppercase tracking-wider">
+                <ShieldCheck className="w-4 h-4 text-brand-blue" />
+                <span>The Hascorp Standard</span>
               </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-brand-blue flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-slate-700 font-medium">
-                  <strong>Flexible Schedules:</strong> You decide the departure time, route, and stopovers.
-                </p>
-              </div>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                We don't just hand over the keys to a standard fleet vehicle; we obsess over the automotive details. We know that a truly great drive comes down to pristine mechanical maintenance, thoughtfully selected aesthetic upgrades, and immersive in cabin experiences.
+              </p>
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                We handle the rigorous upkeep, source the best replacement components, and fine tune our vehicles so you can focus entirely on the road ahead.
+              </p>
             </div>
 
             {/* Location Highlight Card */}
-            <div className="bg-brand-blue-50/70 border border-brand-blue-200/70 rounded-2xl p-5 mt-6">
+            <div className="bg-brand-blue-50/70 border border-brand-blue-200/70 rounded-2xl p-6">
               <div className="flex items-start gap-3.5">
                 <div className="w-10 h-10 rounded-xl bg-brand-navy text-white flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5">
                   <MapPin className="w-5 h-5 text-brand-blue" />
@@ -98,25 +104,6 @@ export const AboutSection: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* Quick Action */}
-            <div className="pt-2 flex flex-wrap gap-4">
-              <a
-                href="tel:+919607681995"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-brand-navy text-white hover:bg-brand-navy-700 font-bold rounded-xl text-sm transition-all duration-200 shadow-sm"
-              >
-                <Phone className="w-4 h-4 text-brand-blue" />
-                <span>Call +91 9607681995</span>
-              </a>
-
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-brand-navy hover:bg-slate-50 border border-slate-200 font-bold rounded-xl text-sm transition-all duration-200"
-              >
-                <span>View Contact Details</span>
-              </a>
-            </div>
-
           </div>
 
         </div>

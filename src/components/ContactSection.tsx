@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Send, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
+import { InstagramIcon, FacebookIcon } from './SocialIcons';
 
 export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -125,6 +126,56 @@ export const ContactSection: React.FC = () => {
                 <p className="text-xs text-slate-200 font-medium leading-relaxed">
                   Every vehicle is handed over clean, sanitized, and ready for you to drive yourself.
                 </p>
+              </div>
+            </div>
+
+            {/* Social Media Channels */}
+            <div className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-soft">
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-blue block mb-3">
+                Follow & Connect With Us
+              </span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/hascorpselfdrivecars?stkn=MW92NnNtejF2YWxseg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200/80 hover:border-pink-500 bg-slate-50/60 hover:bg-pink-50/30 transition-all duration-200 group"
+                  aria-label="Hascorp on Instagram"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 text-white flex items-center justify-center flex-shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+                    <InstagramIcon className="w-5 h-5" />
+                  </div>
+                  <div className="min-w-0 text-left">
+                    <span className="text-xs font-bold text-brand-navy block group-hover:text-pink-600 transition-colors">
+                      Instagram
+                    </span>
+                    <span className="text-[11px] text-slate-500 truncate block">
+                      @hascorpselfdrivecars
+                    </span>
+                  </div>
+                </a>
+
+                {/* Facebook */}
+                <a
+                  href="https://www.facebook.com/share/1DNjTtukJd/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3.5 rounded-xl border border-slate-200/80 hover:border-[#1877F2] bg-slate-50/60 hover:bg-blue-50/30 transition-all duration-200 group"
+                  aria-label="Hascorp on Facebook"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-[#1877F2] text-white flex items-center justify-center flex-shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+                    <FacebookIcon className="w-5 h-5" />
+                  </div>
+                  <div className="min-w-0 text-left">
+                    <span className="text-xs font-bold text-brand-navy block group-hover:text-[#1877F2] transition-colors">
+                      Facebook
+                    </span>
+                    <span className="text-[11px] text-slate-500 truncate block">
+                      Hascorp Self Drive
+                    </span>
+                  </div>
+                </a>
               </div>
             </div>
 
